@@ -1,0 +1,87 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="footer pt-4">
+	<!-- REQUIRED SLDS WRAPPER -->
+    	<div class="slds-scope">
+         <!-- PRIMARY CONTENT WRAPPER -->
+         <!-- RESPONSIVE GRID EXAMPLE -->
+         <div class="myapp">
+        	<div class="slds-grid slds-wrap">
+				<div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-12">
+                	<div class="slds-box_x-small slds-text-align_center slds-m-around--x-small pt-1">
+                    	<a href="https://DenverRescueMission.org"><img class="footerlogo" src="https://denverrescuemission.org/wp-content/uploads/2019/04/DRM_logo_navbar.svg"/></a>
+                 	</div>
+          		 </div>
+          		<div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--3-of-12">
+                	<div class="slds-box_x-small slds-m-around--x-small">
+                   
+                        <!-- Nested Column -->
+                        <div class="slds-scope">
+                        <!-- PRIMARY CONTENT WRAPPER -->
+                        <!-- RESPONSIVE GRID EXAMPLE -->
+                            <div class="myapp footer-nav-menu">
+        	                   <div class="slds-grid slds-wrap mt-neg-1">
+                                    <div class="slds-col slds-size--1-of-2 slds-small-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                                       <div class="slds-box_x-small slds-m-around--xxx-small">
+                                           <p><a href="https://DenverRescueMission.org/">Home</a></p>
+                                           <p><a href="https://DenverRescueMission.org/who-we-are/our-vision/">About</a></p>
+                                           <p><a href="https://DenverRescueMission.org/who-we-are/contact-us/">Contact Us</a></p>
+                                           <p><a href="https://DenverRescueMission.org/careers">Careers</a></p>
+                                       </div>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-2 slds-small-size--1-of-2 slds-medium-size--1-of-1 slds-large-size--1-of-2">
+                                       <div class="slds-box_x-small slds-m-around--xxx-small">
+                                           <p><a href="https://DenverRescueMission.org/get-involved">Get Involved</a></p>
+                                           <p><a href="https://DenverRescueMission.org/blog">Blog</a></p>
+                                           <p><a href="https://DenverRescueMission.org/login">Login</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / NESTED COLUMN -->
+                	</div>
+          		</div>
+                <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--8-of-12">
+                	<div class="slds-box_x-small slds-text-align_center slds-m-around--x-small footerfinancialaccountability">
+						<img src="https://denverrescuemission.org/wp-content/uploads/2019/05/BBB-logo.png" alt="BBB Accredited Charity"/> <img src="https://denverrescuemission.org/wp-content/uploads/2019/05/EFCA-logo.png" alt="EFCA Accredited" /> <a href="https://chcimpact.org/nonprofit-partners" target="_blank" rel="noopener"><img src="https://DenverRescueMission.org/wp-content/uploads/2020/11/2011_CHC_Financial-Accountability_logo.jpg" alt="Creating Healthier Communities" /></a> <img src="https://DenverRescueMission.org/wp-content/uploads/2019/05/4starBanner_300x84.jpg" alt="Charity Navigator" /><img src="https://DenverRescueMission.org/wp-content/uploads/2019/05/citygate-network-logo.png" alt="Citygate Network" /> <a href="http://fundraisingregistration.com/index.php?key=e96ed478dab8595a7dbda4cbcbee168f&amp;s=l" target="_blank" rel="noopener"><img src="https://DenverRescueMission.org/wp-content/uploads/2019/05/legally-compliant-seal.png" alt="Legally Compliant and Registered" /></a>
+                      
+                        <p class="pt-2 w-90">Denver Rescue Mission is a 501(c)3 non-profit organization. 83% of every dollar we receive goes directly to serving the needs of the homeless and needy in the Denver metro area.</p>
+                        <!-- Nested Column -->
+                        <div class="slds-scope">
+                        <!-- PRIMARY CONTENT WRAPPER -->
+                        <!-- RESPONSIVE GRID EXAMPLE -->
+                            <div class="myapp">
+        	                   <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--3-of-12">
+                                       <div class="slds-box_x-small slds-m-around--x-small">
+                                            <p><a href="https://DenverRescueMission.org/who-we-are/financial-accountability/">Financial Accountability</a></p>
+                                       </div>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--3-of-12">
+                                       <div class="slds-box_x-small slds-m-around--x-small">
+                                           <p><a href="https://Denverrescuemission.org/privacy-policy/">Privacy Policy</a></p>
+                                        </div>
+                                    </div>
+                                   <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--3-of-12">
+                                       <div class="slds-box_x-small slds-m-around--x-small">
+                                            <p><a href="https://Denverrescuemission.org/terms/">Terms of Use</a></p>
+                                       </div>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--3-of-12">
+                                       <div class="slds-box_x-small slds-m-around--x-small">
+                                           <p style="font-size:14px;">EIN: 84-6038762</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top:0;text-align:center;font-size: 0.8em; line-height: 1.25;color: #333333;">Denver Rescue Mission | 6100 Smith Road, Denver, CO 80216 | 303.297.1815</div>
+                        </div>
+                        <!-- / NESTED COLUMN -->
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+    <!-- / RESPONSIVE GRID EXAMPLE -->
+	</div>    
+</div>
+</aura:component>

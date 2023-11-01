@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="header dual">
+        <a href="https://DenverRescueMission.org"><img class="logo" src="https://denverrescuemission.org/wp-content/uploads/2019/04/DRM_logo_navbar.svg"/></a>
+        <a href="https://FortCollinsRescueMission.org"><img class="logo" src="https://fortcollinsrescuemission.org/wp-content/uploads/2019/08/FCRM_logo.svg"/></a>
+<!--
+<div class="nav">
+    <div class="nav-item">
+        <a href="https://denverrescuemission.org/volunteer/">Denver Opportunities</a>
+    </div>
+    <div class="nav-item nav-item-last">
+        <a href="https://denverrescuemission.org/contact/">Fort Collins Opportunities</a>
+    </div>
+</div>
+-->
+</div>
+    <div class="header-mobile">
+        <a href="https://DenverRescueMission.org"><img class="logo logo-mobile" src="https://denverrescuemission.org/wp-content/uploads/2019/04/DRM_logo_navbar.svg"/></a>
+        <a href="https://FortCollinsRescueMission.org"><img class="logo logo-mobile" src="https://fortcollinsrescuemission.org/wp-content/uploads/2019/08/FCRM_logo.svg"/></a>
+		<!--
+		<div class="nav nav-mobile">
+            <div class="nav-item nav-item-mobile nav-item-mobile-reg">
+                <a href="https://denverrescuemission.org/volunteer/">View All Opportunities</a>
+            </div>
+            <div class="nav-item nav-item-mobile nav-item-mobile-sm">
+                <a href="https://denverrescuemission.org/volunteer/">Back</a>
+            </div>
+        </div>
+		-->
+    </div>
+</aura:component>

@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="header">
+        <a href="https://DenverRescueMission.org"><img class="logo" src="https://denverrescuemission.org/wp-content/uploads/2019/04/DRM_logo_navbar.svg"/></a>
+<div class="nav">
+    <div class="nav-item">
+        <a href="https://denverrescuemission.org/volunteer/">View All Opportunities</a>
+    </div>
+    <div class="nav-item nav-item-last">
+        <a href="https://denverrescuemission.org/contact/">Contact Us</a>
+    </div>
+</div>
+</div>
+    <div class="header-mobile">
+        <a href="https://DenverRescueMission.org"><img class="logo logo-mobile" src="https://denverrescuemission.org/wp-content/uploads/2019/04/DRM_logo_navbar.svg"/></a>
+		<div class="nav nav-mobile">
+            <div class="nav-item nav-item-mobile nav-item-mobile-reg">
+                <a href="https://denverrescuemission.org/volunteer/">View All Opportunities</a>
+            </div>
+            <div class="nav-item nav-item-mobile nav-item-mobile-sm">
+                <a href="https://denverrescuemission.org/volunteer/">Back</a>
+            </div>
+        </div>
+    </div>
+</aura:component>

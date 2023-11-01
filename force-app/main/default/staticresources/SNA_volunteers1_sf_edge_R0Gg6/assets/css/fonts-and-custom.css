@@ -1,0 +1,813 @@
+/*Required Asterix*/
+.flowruntime-input-label[flowruntime-picklistInputLwc_picklistInputLwc] {
+    display: flex !important;
+    margin-top:-6px;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Buttons to replace the hard-coded accordion panel */
+a.btn-water {
+    background:#62b1bd;
+    padding:0.5em 2em;
+    text-transform:capitalize;
+    margin:1em auto !important;
+    color:#ffffff !important;
+    text-decoration:none;
+   	white-space:nowrap !important;
+	text-transform:uppercase;
+}
+a.btn-water:hover {
+    background-color: #202945;
+    text-decoration:none !important;
+    color:#fff !important;
+  	text-transform:uppercase;
+
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default  ---- DO NOT USE: THIS STYLE BREAKS THE "UPLOAD FILE" OPTION ON A FLOW --------
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+*/
+
+/* ------------ Custom CSS from DRM Staff Below ------------ */
+@font-face {
+    font-family: 'Muli' !important;
+    src: url(../resource/DRMMuliFont) format('woff');
+}
+
+
+body, .slds-accordion .cInternAccordian, .slds-accordion__summary-heading, lightning-formatted-rich-text span, .flowruntimeDisplayText span, .slds-form-element__label, .uiOutputRichText {
+    font-size:calc(20px + 0vw);
+    color: #333333;
+}
+.flowRuntimeV2 .content {
+    font-size:16px !important;
+}
+.spacer-20 {
+    margin-top:20px;
+    height:0px;
+}
+.spacer-40 {
+    margin-top:40px;
+    height:0px;
+}
+.bg-banana-30 {
+    background-color: #fce9c1;
+    padding:20px;
+}
+
+h1 {
+    
+}
+h2, h2.mealsearchtitle {
+    font-size: 36px !important;
+    line-height: 2.8rem;
+    letter-spacing: -0.045rem;
+    font-weight: bold;
+    color: #202945;
+    margin-bottom: 15px;
+    text-align:center !important;
+}
+h2:after, h2.mealsearchtitle:after {
+	content: ' ' !important;
+    width: 82px !important;
+    height: 3px !important;
+    background-color: #62B1BD !important;
+    display: block !important;
+    margin-top: 0.9rem !important;
+    margin-bottom: 0.65rem !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
+.modal-header h2 {
+    font-size:1.25em !important;
+}
+.modal-header h2:after {
+    display:none !important;
+}
+.modal-header {
+    border-bottom:none !important;
+}
+.modal-container button {
+    border-radius: 0 !important;
+    background-color:#862633 !important;
+}
+.modal-container button:hover {
+    background-color:#A82738 !important;
+}
+.modal-container button.uiButton--modal-closeBtn, .modal-container button.uiButton--modal-closeBtn:hover {
+    background-color:transparent !important;
+    padding:inherit !important;
+}
+.slds-modal__close {
+    top: 0px;
+    right:5px;
+    color:#333;
+    font-size:1.25em;
+}
+.slds-modal__close:hover {
+    color:#862633;
+}
+.modal-container .slds-card__body button, .actionsRight button {
+    padding:10px 40px;
+    margin-top:1em;
+}
+
+flowruntime-lwc-body h2 {
+	font-size: 16px !important;
+	font-weight:normal;
+    line-height: 2.8rem;
+    letter-spacing: 1;
+    color:#333333;
+    margin-bottom: 0;
+    text-align:center;   
+}
+flowruntime-lwc-body h2:after {
+	display:none !important;
+}
+.flowruntimeRichTextWrapper h1 {
+    color:#62b1bd;
+    font-weight:bold;
+    font-size:1.5em;
+    margin-top:1em;
+}
+h3 {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    color: #862633;
+}
+h4 {
+    font-size: 20px !important;
+    font-weight: normal;
+}
+.slds-m-top_x-large, .slds-m-top--x-large {
+    margin-top:0;
+}
+.text-block {
+	/*
+    max-width:90%;
+    margin-left: auto;
+    margin-right: auto; 
+    */
+}
+.text-block p {
+    margin-bottom:1em;
+}
+p.large {
+	font-size:1.2em;  
+}
+.font-14 {
+    font-size:14px !important;
+}
+.font-16 {
+    font-size:16px;
+}
+p a, li a {
+    color:#862633 !important;
+    text-decoration: underline;
+}
+p a:hover, li a:hover {
+    color:#A82738 !important;
+}
+.flow-radio-button-error span {
+    color:#d8292f;
+    font-size: 16px;
+}
+/* ---- Accordion Customizations ---- */
+h3.slds-accordion__summary-heading {
+    font-size:20px !important;
+    font-weight:normal;
+}
+
+.slds-accordion__list-item .slds-truncate {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow:visible;
+    white-space: normal;
+}
+.slds-accordion__summary-heading .slds-button:focus {
+    text-decoration:none;
+}
+.slds-accordion__summary-heading {
+    color:#862633;
+}
+.slds-is-open>.slds-accordion__content {
+    margin-left:1.25em; /*make content inside accordion line up with accordion title */
+}
+.slds-accordion__summary-action-icon {
+    flex-shrink: 0;
+    transform: rotate(0deg);
+}
+.slds-is-open>.slds-accordion__summary .slds-accordion__summary-action-icon {
+	transform: rotate(180deg);
+}
+.slds-icon-text-default, .slds-button:hover .slds-button__icon, .slds-button:focus .slds-button__icon, .slds-button:active .slds-button__icon, .slds-button[disabled] .slds-button__icon, .slds-button:disabled .slds-button__icon {
+    fill: #b7b6ad;
+}
+.slds-accordion__summary-action:hover, .slds-accordion__summary-action:focus {
+    color:#862633;
+}
+.slds-accordion__list-item, .slds-accordion__list-item:first-child {
+    border:none;
+}
+/* ---- END Accordion Customizations ---- */
+.forceCommunitySection .cb-section_column:only-child {
+    padding:0 !important;
+}
+.header {
+    -webkit-box-shadow: 0 2px 20px 0 rgb(0 0 0 / 11%);
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 11%);
+}
+[data-item-id="05a84faa-e41b-4695-a56f-f921135ae88c"], [data-item-id="a585d5b0-3168-47f2-ab45-d7ff29ae67be"] {
+    margin-bottom: 0!important;
+}
+.logo, img .logo {
+    padding: 14px;
+    min-width: 83px;
+    display:inline-block;
+    max-width: 111px;
+}
+.logo.hf-logo {
+    max-width:175px;
+}
+.logo-mobile, img .logo-mobile {
+	border-right: 1px solid #E3E1E5;
+}
+.header.dual .logo, .header.dual .logo-mobile {
+    border-right: 1px solid #E3E1E5;
+}
+.home.cta p {
+    text-align:center;
+}
+.home.cta .btn {
+    background-color:#862633;
+    color:#ffffff !important;
+    padding:18px 60px 20px 60px;
+    margin:20px;
+    display:inline-block;
+    text-decoration:none !important;
+}
+.home.cta .btn:hover {
+    background-color:#A82738;
+    text-decoration:none !important;
+    color:#ffffff !important;
+}
+.logo.home {
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+.header .nav {
+    display:inline-block;
+    margin-left: 0px;
+}
+.header .nav .nav-item {
+    border-left: 1px solid #E3E1E5;
+    display:inline-block;
+    text-transform:uppercase;
+    margin-top: 0px;
+}
+.header .nav .nav-item a, .header-mobile .nav .nav-item a {
+    padding:10px 1.8125vw;
+    font-size: 18px;
+    line-height: 5.85em;
+    color: #252525;
+    margin:auto;
+}
+.header .nav .nav-item.nav-item-last {
+    border-left: 1px solid #E3E1E5;
+    display:inline-block;
+    border-right: 1px solid #E3E1E5;
+    text-transform:uppercase;
+}
+.header a, .header a:hover {
+    text-decoration:none !important;
+}
+.header-mobile {
+    -webkit-box-shadow: 0 2px 20px 0 rgb(0 0 0 / 11%);
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 11%);
+}
+.hf-header.header-mobile, .hf-header.header {
+}
+.header-mobile .nav {
+    display:inline-block;
+    margin-left: 0px;
+    float:right;
+}
+.header-mobile .nav .nav-item {
+    border-left: 0px;
+    display:inline-block;
+    text-transform:uppercase;
+    margin-top: -5px;
+}
+.msg-slide {
+    margin-bottom:0;
+}
+.hero.home {
+    margin-top:-23px;
+    background-image: url("https://denverrescuemission.org/wp-content/uploads/2021/07/2104_Volunteer_Hero_gradient_04.jpg");
+    background-position: top center;
+    background-size:cover;
+    padding-bottom:100px;
+}
+.hero.home p {
+    margin:20px 0 20px 0;
+    font-size:20px;
+    color:#ffffff;
+}
+.home.heading {
+    margin:40px 0 40px 0;
+}
+.hero {
+    padding:22em 20px 2em 20px;
+    width:100%;
+    text-align:center;
+}
+.hero .pre-h1 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    border-bottom: solid 3px #862633;
+    display: inline-block;
+    margin-bottom: 0px;
+    z-index: 1000;
+    position: relative;
+    text-transform: uppercase;
+    text-align:center;
+}
+.hero h1 {
+    font-family: "Muli" !important;
+    font-weight: bold;
+    font-size: 45px !important;
+    color: #fff;
+    letter-spacing: -1.11px;
+    line-height: 57px;
+    margin: 0 auto 8px;
+    width: 100%;
+    max-width: 920px;
+    z-index: 1000;
+    position: relative;
+}
+.hero-no-img {
+    padding:0 20px 3em 20px;
+    width:100%;
+    text-align:center;
+}
+.hero-no-img .pre-h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    border-bottom: solid 3px #862633;
+    display: inline-block;
+    margin-bottom: 0px;
+    z-index: 1000;
+    position: relative;
+    text-transform: uppercase;
+    text-align:center;
+}
+.hero-no-img h1 {
+    font-family: "Muli" !important;
+    font-weight: normal;
+    font-size: 45px !important;
+    color: #333;
+    letter-spacing: -1.11px;
+    line-height: 57px;
+    margin: 0 auto 8px;
+    width: 100%;
+    max-width: 920px;
+    z-index: 1000;
+    position: relative;
+}
+.opportunityheading {
+    margin-top:40px;
+}
+.slds-text-body_regular li, .slds-text-body--regular li {
+    font-size:20px;
+}
+.js-content-eyebrow span {
+    font-size:1.5em;
+}
+.mediaContainer {
+    width:30% !important;
+}
+/* ----------- Meta-Data 2 Bullet Removal --------------- */
+.forceCommunityCardLayout ul.metadataFields>li:not(:first-child):before {
+    content: "" !important;
+}
+.js-content-metadata:first-child {
+    margin-top:1em !important;
+}
+
+/* ----------- Urgent Meal Shift: Spacing ---------------*/
+.slds-m-bottom_large, .slds-m-bottom--large {
+    margin-bottom: 2em !important;
+}
+
+.ml-ul {
+    margin-left:1.5em;
+}
+.ml-ul li {
+    padding-top:1em;
+}
+.tabs__nav ul, .tabs__nav li {
+    margin:0;
+}
+.tabHeader {
+    padding:10px 20px !important;
+    font-size:16px;
+}
+.uiTabset--default .tabs__item.active>a {
+    color:#862633;
+    border-color:#862633;
+    font-weight:bold;
+}
+.uiTabset--default .tabs__item+.tabs__item {
+    margin-left: 0;
+}
+.uiTabBar {
+    margin-bottom:2em;
+}
+.active, .accordion {
+    background-color:#fff;
+}
+.forceCommunityRichText ul>li:before {
+    content: " " !important;
+    background-color: #862633;
+    display: inline-block;
+    width: .5em;
+    margin-left: -1.5em;
+    margin-right: 1em;
+    margin-top: auto;
+    margin-bottom: .185em;
+    font-size: 0.7em;
+    height: .5em;
+}
+.js-content-subtitle a {
+    font-size:20px;
+ }
+
+.slds-p-around_medium, .slds-p-around--medium {
+    padding-top: 0;
+    margin-top: -1em;
+    padding-bottom: 3em;
+}
+.mediaContainer {
+    margin-bottom:1em;
+}
+
+.ql-indent-1 {
+    padding-left: 0 !important;
+}
+
+.salesforceIdentityLoginBody2 .cCenterPanel {
+    max-width: 425px !important;
+}
+
+lightning-datepicker h2 {
+    font-size:20px !important;
+    font-weight: normal !important;
+}
+lightning-datepicker h2:after {
+    display: none;
+}
+
+.footer {
+    color:#333333;
+    width:100%;
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.footerlogo {
+    max-width:100px;
+}
+.footer .footerfinancialaccountability img{
+    max-height:55px;
+    width:auto;
+    padding-left:5px;
+    padding-right:5px;
+}
+.footer p a {
+    font-size: 0.72em;
+    font-weight: normal;
+}
+.footer-nav-menu a {
+    color:#333333 !important;
+}
+.footer-nav-menu a:hover {
+    color:#862633 !important;
+}
+
+.footer .footerfinancialaccountability p {
+    font-size: 0.8em;
+    line-height: 1.25;
+    color: #393939;
+}
+.footer .footerfinancialaccountability p a {
+    font-weight: bold;
+}
+
+/* ---------------- Blueberry Background Settings ------------------ */
+.blueberry-bg, .blueberry-bg h2, .blueberry-bg p, .blueberry-bg ul, .blueberry-bg li {
+   color:#fff;
+}
+.blueberry-bg ul>li:before {
+    content: " " !important;
+    background-color: #fff !important;
+    display: inline-block;
+    width: .5em;
+    margin-left: -1.5em;
+    margin-right: 1em;
+    margin-top: auto;
+    margin-bottom: .185em;
+    font-size: 0.7em;
+    height: .5em;
+}
+
+/* ---------------- Email Sign Up ---------------- */
+.emailsignup.emailsignup-1 { padding-bottom: 0 !important; }
+@media only screen and (max-width: 1007px) {
+  .emailsignup.emailsignup-1 { padding-bottom: 20px !important; }
+}
+.emailsignupblock {
+    margin-top:40px;
+    background-color:#202945;
+}
+.emailsignupblock h2 {
+    color:#fff;
+    text-align: center;
+    font-size: 1.5em !important;
+    line-height: 1.5em;
+    letter-spacing: -0.045rem;
+    font-weight: bold !important;
+    padding:0 5%;
+}
+.emailsignupblock h2:after {
+	margin-bottom:20px;
+}
+.emailsignupblock iframe {
+}
+.emailsignupblock .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 7%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ------------ END Email Sign Up ------------- */
+
+/* ---------------------- Flow Styles --------------------- */
+.forceCommunityFlowCommunity {
+    border:none !important;
+    background-color: #ffffff !important;
+    padding:0;
+}
+
+.slds-button_brand {
+    border-radius:0;
+    border-color:#862633;
+    color:#ffffff;
+    font-size: 16px;
+    background-color: #862633;
+}
+.slds-button_brand:hover {
+    background-color: #a82738 !important;
+}
+button.slds-button_neutral {
+    border:1px solid #862633 !important;
+    border-radius: 0 !important;
+    background-color:rgba(255,255,255,0) !important;
+    color:#862633 !important;
+    font-size:16px !important;
+}
+button.slds-button_neutral:hover {
+    background-color:#862633 !important;
+    color:#ffffff !important;
+    border-radius: 0 !important;
+    font-size:16px !important;
+}
+.slds-button:focus {
+    box-shadow:none;
+}
+.slds-form-element__icon .slds-button_icon, lightning-button-icon .content button, .slds-button_icon-bare {
+    background-color: transparent !important;
+    color: #862633 !important;
+    border: none !important;
+}
+/* ----------------------- Application Fields ---------------- */
+.slds-input-has-icon .slds-input__icon {
+    top:6px;
+}
+
+.text-center {
+    text-align:center;
+}
+.text-right {
+    text-align:right;
+}
+/* ----------------------- Login Page ---------------------- */
+.salesforceIdentityLoginBody2 .cCenterPanel .siteforceContentArea {
+    background-color: #fff !important;
+    padding: 30px;
+    color:#333;
+}
+.salesforceIdentityLoginBody2 .cCenterPanel .siteforceContentArea a {
+    color:#862633;
+}
+.salesforceIdentityLoginBody2 .cCenterPanel .siteforceContentArea a:hover {
+    color:#A82738;
+}
+.salesforceIdentityLoginForm2 .inputBox {
+    font-size:20px;
+}
+.login-logo {
+    display: inline-block;
+    width:45%;
+    margin-bottom: 20px;
+}
+.login-logo img {
+    height:90px;
+}
+.login-logo.drm-logo {
+    text-align:left;
+}
+.login-logo.fcrm-logo {
+	text-align:right;
+    float:right;
+}
+
+/* ---------- Search Results Styles -------- */
+.forceSearchResultsFilters h3 {
+    font-size: 1em !important;
+    font-weight: bold !important;
+    color: #862633 !important;
+}
+.forceSearchResultsFilters .slds-form-element label, .forceSearchResultsFilters .slds-form-element label span {
+    font-size:14px !important;
+}
+
+.slds-medium-size_1-of-6, .slds-medium-size--1-of-6 {
+    width:30% !important;
+}
+/* ----------------------- Padding Options ------------------*/
+.pt-1 {padding-top:1em;}.pt-2 {padding-top:2em;}.pt-3 {padding-top:3em;}.pt-4 {padding-top:4em;}.pt-5 {padding-top:5em;}.pt-6 {padding-top:6em;}.pt-7 {padding-top:7em;}.pt-8 {padding-top:8em;}.pt-9 {padding-top:9em;}.pt-10 {padding-top:10em;}
+.pb-1 {padding-bottom:1em;}.pb-2 {padding-bottom:2em;}.pb-3 {padding-bottom:3em;}.pb-4 {padding-bottom:4em;}.pb-5 {padding-bottom:5em;}.pb-6 {padding-bottom:6em;}.pb-7 {padding-bottom:7em;}.pb-8 {padding-bottom:8em;}.pb-9 {padding-bottom:9em;}.pb-10 {padding-bottom:10em;}
+/* ----------------------- Width Options -------------------- */
+.w-100 {width:100% !important;margin-left:auto;margin-right:auto;}.w-90 {width:90% !important;margin-left:auto;margin-right:auto;}.w-80 {width:80% !important;margin-left:auto;margin-right:auto;}.w-75 {width:75% !important;margin-left:auto;margin-right:auto;}.w-70 {width:70% !important;margin-left:auto;margin-right:auto;}.w-62 {width:62% !important;margin-left:auto;margin-right:auto;}.w-60 {width:60% !important;margin-left:auto;margin-right:auto;}.w-50 {width:50% !important;margin-left:auto;margin-right:auto;}.w-40 {width:40% !important;margin-left:auto;margin-right:auto;}.w-30 {width:30% !important;margin-left:auto;margin-right:auto;}.w-25 {width:25% !important;margin-left:auto;margin-right:auto;}.w-20 {width:20% !important;margin-left:auto;margin-right:auto;}.w-10 {width:10% !important;margin-left:auto;margin-right:auto;}
+/* ----------------------- Margin Options -------------------- */
+.mt-neg-1 {margin-top:-1em;}.mt-neg-2 {margin-top:-2em;}.mt-neg-3 {margin-top:-3em;}.mt-neg-4 {margin-top:-4em;}.mt-neg-5 {margin-top:-5em;}
+.mb-neg-1 {margin-bottom:-1em;}.mb-neg-2 {margin-bottom:-2em;}.mb-neg-3 {margin-bottom:-3em;}.mb-neg-4 {margin-bottom:-4em;}.mb-neg-5 {margin-bottom:-5em;}
+
+
+.mt-1 {margin-top:1em;}.mt-2 {margin-top:2em;}.mt-3 {margin-top:3em;}.mt-4 {margin-top:4em;}.mt-5 {margin-top:5em;}.mt-6 {margin-top:6em;}.mt-7 {margin-top:7em;}.mt-8 {margin-top:8em;}.mt-9 {margin-top:9em;}.mt-10 {margin-top:10em;}
+.mb-1 {margin-bottom:1em;}.mb-2 {margin-bottom:2em;}.mb-3 {margin-bottom:3em;}.mb-4 {margin-bottom:4em;}.mb-5 {margin-bottom:5em;}.mb-6 {margin-bottom:6em;}.mb-7 {margin-bottom:7em;}.mb-8 {margin-bottom:8em;}.mb-9 {margin-bottom:9em;}.mb-10 {margin-bottom:10em;}
+
+/* ----------------------- Mobile Rules ------------------ */
+@media only screen and (max-width: 1019px) {
+	.text-block {
+		max-width:90%;
+    	margin-left: auto;
+    	margin-right: auto; 
+	}  
+}
+@media only screen and (max-width: 400px) {
+    .hero {
+        padding-top:8em;
+	}  
+}
+@media only screen and (min-width: 1260px) {
+    .half-page{
+	width:50%;
+    margin-left:auto;
+	}
+}
+/*--- Header and Mobile Header ---*/
+@media only screen and (min-width: 1001px) { /* At 1001px wide and above, show desktop header and hide mobile header*/
+	.header {
+		display:block; 
+	}
+    .header-mobile {
+        display:none;
+    }
+}
+@media only screen and (min-width:401px) and (max-width: 1000px) { /* At 1000px wide and below, show mobile header and hide desktop header*/
+	.header {
+		display:none; 
+	}
+    .header-mobile {
+        display:block;
+    }
+    .nav-item-mobile-sm {
+        display:none !important;
+    }
+}
+@media only screen and (max-width: 400px) { /* At 400px wide and below, show smaller mobile nav item*/
+	.header {
+		display:none; 
+	}
+    .header-mobile {
+        display:block;
+    }
+    .nav-item-mobile-reg {
+        display:none !important;
+    }
+    .nav-item-mobile-sm {
+        display:block;
+    }
+}
+/* ------- Mobile Rules for Email Aign Up ------ */
+@media only screen and (max-width: 1024px) {
+    .emailsignupblock .container {
+    	padding-top: 10%;     
+    }
+}
+@media only screen and (max-width: 1008px) {
+    .emailsignupblock .container {
+    	padding-top: 30%;     
+    }
+}
+@media only screen and (max-width: 867px) {
+    .emailsignupblock .container {
+    	padding-top: 36%;     
+    }
+}
+@media only screen and (max-width: 760px) {
+    .emailsignupblock .container {
+    	padding-top: 40%;     
+    }
+}
+@media only screen and (max-width: 700px) {
+    .emailsignupblock .container {
+    	padding-top: 45%;     
+    }
+}
+@media only screen and (max-width: 620px) {
+    .emailsignupblock .container {
+    	padding-top: 50%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .emailsignupblock .container {
+		padding-top: 55%;
+    	margin-left: 2%;
+    	margin-right: 2%;
+    	width: auto;    
+    }
+}
+@media only screen and (max-width: 480px) {
+    .emailsignupblock .container {
+		padding-top: 60%;
+    	margin-left: 2%;
+    	margin-right: 2%;
+    	width: auto;    
+    }
+}
+@media only screen and (max-width: 420px) {
+    .emailsignupblock .container {
+		padding-top: 65%;
+    	margin-left: 2%;
+    	margin-right: 2%;
+    	width: auto;    
+    }
+}
+@media only screen and (max-width: 420px) {
+    .emailsignupblock .container {
+		padding-top: 80%;
+    	margin-left: 2%;
+    	margin-right: 2%;
+    	width: auto;    
+    }
+}
+:root { --dxp-c-section-columns-max-width: 1170px; }

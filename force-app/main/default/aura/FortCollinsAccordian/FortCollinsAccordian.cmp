@@ -1,0 +1,33 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <lightning:accordion aura:id="accordion" activeSectionName="A">
+        <lightning:accordionSection name="A" label="After-care and Transition (Wellington)">
+            <aura:set attribute="actions">
+        
+            </aura:set>
+            <aura:set attribute="body">
+                <p>Gain first-hand experience in drug and alcohol rehabilitation within a rural setting by assisting in the support of New Life Program participants and in the management of our after-care program. This role will meet with program graduates, run process groups, and teach vital life skills refresher courses to men in the final portion of their program, helping to prepare them for graduation and their new life.</p>
+                </aura:set>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="Agriculture (Wellington)">
+            <p>Assist in the agricultural aspects of a functioning farm as part of drug and alcohol rehabilitation in a rural setting. Interns will implement systems and best practices in our greenhouses, gardens and with our livestock while gaining valuable farm management experience. Agricultural or horticultural experience/education required.</p>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="C" label="Case Management (Wellington)">
+                <p>Assist individuals struggling with substance use disorder, homelessness, poverty, or coming from jail re-entry from a Christ-centered perspective. You will participate in case management meetings, develop treatment plans, review case files, record case details, and help participants navigate all case management needs.</p>
+                 </lightning:accordionSection>
+        <lightning:accordionSection name="D" label="Emergency Services and Outreach (Fort Collins)">
+            <p>Work with Fort Collins Rescue Mission staff to provide support for shelter guests who utilize our services. This includes oversight of operations and interaction with guests with the goal of meeting immediate and long-term needs. This role provides high interaction with shelter guests and exposure to emergency services and will also work to provide appropriate referrals as needed and assist in building and maintaining strategic relationships within our community.</p> </lightning:accordionSection>
+        <lightning:accordionSection name="E" label="Emergency Services - Shelter Operations (Fort Collins)">
+            <p>Work with Fort Collins Rescue Mission staff to provide support for participants and shelter guests who utilize our services. This includes oversight of operations and interaction with guests with the goal of meeting immediate and long-term needs. This role provides high interaction with shelter guests and exposure to emergency services, as well as exposure to non-profit operations and procedures.</p> </lightning:accordionSection>
+        <lightning:accordionSection name="F" label="Intake (Wellington)">
+            <p>Conduct intake interviews with men wanting to join our New Life Program. Learn a little about their life story and then input information into internal and national databases. You will be able to help guide those entering our shelter to resources, services and programs that they can engage in.</p>    </lightning:accordionSection>
+        <lightning:accordionSection name="G" label="Kitchen (Wellington)">
+            <p>Assist in all aspects of a kitchen's daily operations including meal planning and execution, managing inventory and assisting in the training of the kitchen crew. Interns will also have the opportunity to work closely with the Kitchen Supervisor in learning how Work Therapy is integrated into drug and alcohol rehabilitation in a rural setting.</p> </lightning:accordionSection>
+        <lightning:accordionSection name="H" label="Master's Intern (Wellington)">
+            <p>Gain clinical hours in social work, and more importantly provide clinical help and assistance to the emotional, mental, and physical health of Harvest Farm New Life Program participants. Each intern may focus on one or more social work approaches (macro, clinical, generalist).</p> </lightning:accordionSection>
+        <lightning:accordionSection name="I" label="Program Coordination (Wellington)">
+            <p>Work with Harvest Farm staff to provide support for participants in the evenings. This includes oversight of operations and interaction with guests with the goal of meeting immediate and long-term needs. This role provides high interaction with shelter guests and exposure to emergency services.</p></lightning:accordionSection>
+        <lightning:accordionSection name="J" label="Volunteer Coordinator">
+            <p>Assist the Volunteer Coordinator with recruitment, screening, training, placement and appreciation of volunteers and interns at Harvest Farm and the Ft. Collins Rescue Mission. You will also assist with site supervisor support and training and will interact with several different agencies and organizations within the community to build relationships and raise awareness for the work we do.</p></lightning:accordionSection>
+        
+    </lightning:accordion>
+</aura:component>

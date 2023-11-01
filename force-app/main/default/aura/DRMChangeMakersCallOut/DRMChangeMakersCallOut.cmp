@@ -1,0 +1,10 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="blueberry-bg pt-3 pb-3 w-62">
+    <h2>Make a Bigger Impact by Becoming a Change Maker</h2>
+    <p>There are two different ways you can volunteer at the Mission.</p>
+    <ul class="ml-ul">
+        <li><strong>Short-Term Opportunities:</strong> One-time service opportunities where you can sign up for a single shift.</li>
+        <li><strong>Change Maker Opportunities:</strong> Volunteers who take it one step further by serving in a relational capacity for five months to one year or, sometimes longer. Change Makers invest in the lives of our program participants and guests and often discover personal growth in the process.</li>
+    </ul>
+</div>
+</aura:component>

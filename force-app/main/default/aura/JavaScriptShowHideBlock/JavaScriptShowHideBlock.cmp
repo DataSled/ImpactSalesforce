@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <ltng:require scripts="{!$Resource.jQuery05172022}" afterScriptsLoaded="{!c.jqueryLoaded}" />
+    <div class="msg-slide">
+    	<div class="msg-container">
+    		<p class="text-center pb-1"><strong>Masks Temporarily Required at Shelter Locations</strong></p>
+    		<p class="font-14 pb-1">On May 16, the City and County of Denver’s one-week cumulative incident rate of COVID-19 officially moved from a low to medium level. As a result, in accordance with <a href="https://drive.google.com/file/d/1BSfNvOIdQJYTErshByTVP182woSZnacD/view" target="_blank">Colorado’s Public Health Order 20-38</a>, masks are required for guests, staff, and volunteers—regardless of vaccination status—in homeless shelters in times of medium or high COVID-19 community levels as determined the CDC’s COVID-19 Community Levels.</p>
+            <p class="font-14">Volunteers at our <strong>Lawrence Street Community Center</strong>, <strong>48th Avenue Center</strong>, and <strong>Northglenn Shelter</strong> will be required to wear masks until the Public Health Order is lifted. To help keep masks available for our guests seeking shelter, please bring your own mask with you to your volunteer shift.</p>
+    	</div> 
+    	<div class="msgHide">
+       		<p>Close</p>
+    	</div>
+    </div>
+    <div class="msgShow">
+       	<p>See Important COVID-19 Updates</p>
+    </div>     
+</aura:component>

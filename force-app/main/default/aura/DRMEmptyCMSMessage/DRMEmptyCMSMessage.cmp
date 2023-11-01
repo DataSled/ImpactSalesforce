@@ -1,0 +1,6 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+<div class="spacer-40">&nbsp;</div>
+<div class="pb-1 text-block text-center">
+    <p class=""><em>When opportunities are full, they may not appear on this page. If you're looking for an opportunity not shown here, please <a href="https://DenverRescueMission.org/Contact">contact us</a> to learn more about opportunities that might fit your interests.</em></p> 
+</div>
+</aura:component>

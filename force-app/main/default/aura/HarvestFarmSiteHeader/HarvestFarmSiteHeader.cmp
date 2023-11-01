@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="hf-header header">
+        <a href="https://harvestfarm.org"><img class="logo hf-logo" src="https://harvestfarm.org/wp-content/uploads/2021/03/HF-Logo_color_2020.png"/></a>
+<div class="nav">
+    <div class="nav-item">
+        <a href="https://fortcollinsrescuemission.org/volunteer/">View All Opportunities</a>
+    </div>
+    <div class="nav-item nav-item-last">
+        <a href="https://harvestfarm.org/contact/">Contact Us</a>
+    </div>
+</div>
+</div>
+    <div class="hf-header header-mobile">
+        <a href="https://harvestfarm.org"><img class="logo hf-logo" src="https://harvestfarm.org/wp-content/uploads/2021/03/HF-Logo_color_2020.png"/></a>
+		<div class="nav nav-mobile">
+            <div class="nav-item nav-item-mobile nav-item-mobile-reg">
+                <a href="https://fortcollinsrescuemission.org/volunteer/">View All Opportunities</a>
+            </div>
+            <div class="nav-item nav-item-mobile nav-item-mobile-sm">
+                <a href="https://harvestfarm.org/volunteer/">Back</a>
+            </div>
+        </div>
+    </div>
+</aura:component>

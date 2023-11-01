@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <description>Hides long radio list of CM opps, show the user value of job name they selected, and improve the overall UX. JQuery is required for this snippet to run. JQuery is loaded through the &lt;head&gt; tag in the Page Builder Settings &gt; Advanced tools.</description>
+</AuraDefinitionBundle>

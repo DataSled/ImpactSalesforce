@@ -1,0 +1,73 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+     <lightning:accordion aura:id="accordion" activeSectionName="A">
+        <lightning:accordionSection name="A" label="Agency Relations">
+            <aura:set attribute="actions">
+                
+            </aura:set>
+            <aura:set attribute="body">
+                <p>Assist the Family Rescue Ministry team with creating and maintaining relationships with other organizations to serve families experiencing homelessness in Denver. Conduct research, develop agency relationships and work with case managers to best serve families in our program</p>
+                </aura:set>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="Case Management for Family Rescue Ministry">
+                <p>Assist families and/or seniors transitioning from homelessness to permanent housing. This internship will include pre-screening and maintaining a personal case load acting as a part-time intern case manager, assisting with follow up calls, program projects, and other support services.</p>
+                
+        </lightning:accordionSection>
+        <lightning:accordionSection name="C" label="Case Management for STAR Transitional Program">
+                <p>Assist individuals and families experiencing homelessness and generational poverty who enter our transitional housing program. You will review conduct intakes, provide case management, record follow-up details, and guide our participants toward self-sufficiency.</p>
+                 </lightning:accordionSection>
+         <lightning:accordionSection name="D" label="Chef">
+             <p>Assist in all aspects of a fast-paced kitchen's daily operations including meal planning and execution, managing inventory, and assisting in the training of the kitchen crew. The kitchen crew executes up to 1,500 meals per day. They will also have the opportunity to work closely with the Kitchen Supervisor in learning what it takes to manage the kitchen to prepare for a career in culinary arts.</p>                
+        </lightning:accordionSection>
+         <lightning:accordionSection name="E" label="Church and Community Relations">
+             <p>Assist the Family Rescue Ministry and Family Refugee Services Team with creating and maintaining relationships with churches to form mentor teams that will serve families experiencing homelessness and refugee families in Denver. Recruit, train and support volunteer mentors as you connect them to families.</p>
+        </lightning:accordionSection>
+         <lightning:accordionSection name="F" label="Client Services">
+             <p>Assist the Client Services team in receiving, sorting and managing incoming donations to be distributed to internal groups, our store and community partner agencies. Help manage volunteers and program participants working. This is a fast paced position that will offer something different each day.</p>
+        </lightning:accordionSection>
+         <lightning:accordionSection name="G" label="Content and Photography">
+             <p>Assist with creating compelling content for the Mission with an emphasis on writing and photography. Gain experience in nonprofit storytelling and marketing projects that will directly impact the Mission's ability to reach and connect with its target audiences.</p>
+        </lightning:accordionSection>
+         <lightning:accordionSection name="H" label="Counseling">
+             <p>Provide counseling for New Life Program and STAR Transitional Program participants on a one-on-one basis and group setting to assess their current mental, emotional and spiritual status. A measurable treatment plan will be established based on this information along with other requirements for the participants to graduate from the program. Available to Master's level counseling students enrolled in an accredited academic program only.</p>            
+        </lightning:accordionSection>
+         <lightning:accordionSection name="I" label="Data Analyst and Administrator">
+             <p>Assist the Impact team with understanding and analyzing data from the various databases to provide insight into donor, participant/guest and volunteer trends impacting Denver Rescue Mission.</p>     
+        </lightning:accordionSection>
+        
+         <lightning:accordionSection name="J" label="Education and Life Skills">
+             <p>Work alongside the Life Skills, Education and Career staff to teach/assist classes, lead discussion groups, and complete administrative tasks to support the men in the New Life Program at The Crossing.</p> </lightning:accordionSection>
+  
+         <lightning:accordionSection name="K" label="Family Refugee Services">
+             <p>Learn about and practice communicating, serving and engaging with both volunteers from the community and our program participants. You will exercise strategies and methods for assessing the needs of program participants and matching them to volunteer mentors. Under supervision, you will develop ways to meet the relational needs of both mentors and mentees.</p> 
+         </lightning:accordionSection>
+    
+   
+    <lightning:accordionSection name="L" label="Food Distribution Coordinator">
+        <p>Assist in daily operations at our warehouse to help receive and distribute donations and food supplies for our facilities. Work with our community partners to properly distribute excess food and help coordinate pick up. Assist in the administrative tasks associated with logging donations.</p>
+        </lightning:accordionSection>
+    <lightning:accordionSection name="M" label="Hospitality Desk">
+        <p>Highly interactive position which requires a desire to communicate and build relationships with our community. This is a highly relational position that consists of light accounting, conducting intakes, and managing the waitlist.</p>
+         </lightning:accordionSection>
+    <lightning:accordionSection name="N" label="Housing for Family Services">
+        <p>Establish leads in emergency, transitional and permanent housing partnerships in the community. You will research and track housing in all three areas. It will also include working with Family Rescue Ministry participants who are experiencing challenges finding and securing housing.</p>
+         </lightning:accordionSection>
+    <lightning:accordionSection name="O" label="Intake">
+        <p>Conduct intake interviews with guests wanting to utilize our services. Learn a little about their life story and input information into internal and national databases. You will be able to help guide those entering our shelter to resources, services and programs in which they can engage.</p>
+         </lightning:accordionSection>
+    <lightning:accordionSection name="P" label="Mentor Coordinator">
+        <p>Learn about and practice communicating, serving and engaging with both volunteers from the community and our program participants. You will exercise strategies and methods for assessing the needs of program participants and matching them to volunteer mentors. Under supervision, you will develop ways to meet the relational needs of both mentors and mentees.</p>
+         </lightning:accordionSection>
+        <lightning:accordionSection name="Q" label="Next Step Case Planning">
+         <p>Assist clients engaged with the Next Step Service to complete case planning tasks focused on exiting the shelter living environment in collaboration with Next Step Caseworkers. Work with clients to complete benefit and housing applications, facilitate communication between clients and caseworkers, and manage community providers working on site.</p>
+             </lightning:accordionSection>
+         <lightning:accordionSection name="R" label="Public Relations and Events">
+         <p>Learn media relations skills and other facets of public relations including pitching story ideas, writing press releases, developing social media content, and assisting with the planning and execution of events.</p>
+          </lightning:accordionSection>
+             <lightning:accordionSection name="S" label="Volunteer Coordinator">
+         <p>Assist the Volunteer Coordinator with daily operations at our Lawrence Street Community Center. Help greet, orient and host several groups of volunteers each day. You will help recruit and place high impact volunteers plus, learn and engage within our databases to track our volunteer engagement.</p>
+          </lightning:accordionSection>
+                 <lightning:accordionSection name="T" label="Youth">
+        <p>Assist in the overall running, facilitation and development of the ongoing youth programs for children ages 3-18 who live at The Crossing. Build quality caring relationships with youth and parents. You will get to work directly with youth and assist in the administrative tasks needed to run the program.</p>
+</lightning:accordionSection>
+    </lightning:accordion>
+</aura:component>

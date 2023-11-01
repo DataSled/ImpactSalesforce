@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <ltng:require scripts="{!$Resource.jQuery05172022}" afterScriptsLoaded="{!c.jqueryLoadedFCRM}" />
+    <div class="msg-slide">
+    	<div class="msg-container">
+    		<p class="text-center pb-1"><strong>Volunteer Sign Up Temporarily Unavailable</strong></p>
+            <p class="font-14 pb-1">Our volunteer sign up pages are temporarily unavailable due to a technical issue.</p>
+            <p class="font-14">But we still need volunteers to sign up in the meantime! Please contact us at <a target="_blank" href="mailto:nocovolunteer@denrescue.org">nocovolunteer@denrescue.org</a> if you want to volunteer with us.<a href=""></a></p>
+    	</div> 
+    	<div class="msgHide">
+       		<p>Close</p>
+    	</div>
+    </div>
+    <div class="msgShow">
+       	<p>Site Error: Please Read</p>
+    </div>     
+</aura:component>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Hide the Change Maker type selection radio list. It&apos;s not usable by the end user and shows opportunities that are not live.</description>
+</AuraDefinitionBundle>

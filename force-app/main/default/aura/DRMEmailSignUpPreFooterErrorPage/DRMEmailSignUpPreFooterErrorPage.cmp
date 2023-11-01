@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<div class="emailsignupblock pt-3 mb-neg-2">
+    <h2>Connect with us to get the latest news from Denver Rescue Mission</h2>
+	<div class="container">
+        <iframe class="responsive-iframe" src="https://go.denverrescuemission.org/l/810463/2019-11-11/2mq" width="100%" height="" type="text/html" frameborder="0" style="border: 0"></iframe>
+    </div>
+</div>
+</aura:component>
